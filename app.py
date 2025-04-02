@@ -128,6 +128,9 @@ if st.session_state.selected_item_id is not None:
                     st.error("報告送信中にエラーが発生しました。")
 else:
     st.info("サイドバーから表示したい項目を選択してください。")
+    st.markdown(
+        "姉妹サイト：[俺の会計監査六法](https://ore6po.streamlit.app/)"
+    )
 
 
 st.markdown(

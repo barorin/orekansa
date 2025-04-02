@@ -42,7 +42,7 @@ with st.sidebar:
                 filtered_df["セクション名"] == section
             ].sort_values("セクション内番号")
             for _, row in section_df.iterrows():
-                button_label = f"{row['セクション内番号']}. {row['項目名']}"
+                button_label = f"{row['項目名']}"
                 if st.button(
                     button_label, key=f"btn_{row['ID']}", use_container_width=True
                 ):
@@ -128,9 +128,7 @@ if st.session_state.selected_item_id is not None:
                     st.error("報告送信中にエラーが発生しました。")
 else:
     st.info("サイドバーから表示したい項目を選択してください。")
-    st.markdown(
-        "姉妹サイト：[俺の会計監査六法](https://ore6po.streamlit.app/)"
-    )
+    st.markdown("姉妹サイト：[俺の会計監査六法](https://ore6po.streamlit.app/)")
 
 
 st.markdown(

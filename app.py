@@ -129,7 +129,26 @@ if st.session_state.selected_item_id is not None:
 else:
     st.info("サイドバーから表示したい項目を選択してください。")
     st.markdown("姉妹サイト：[俺の会計監査六法](https://ore6po.streamlit.app/)")
+    # 以下、更新履歴
+    st.markdown("### 📋 更新履歴")
+    st.markdown("以下の更新を反映しました。")
 
+    updates = [
+        {
+            "date": "2025/4/14",
+            "title": "法規・制度委員会研究報告第１号「監査及びレビュー等の契約書の作成例」の改正について",
+            "url": "https://jicpa.or.jp/specialized_field/20250414jqh.html",
+        },
+        # 新しい更新情報はここに追加していけます
+    ]
+
+    for update in updates:
+        col1, col2 = st.columns([1, 4])
+        with col1:
+            st.markdown(f"**{update['date']}**")
+        with col2:
+            st.markdown(f"[{update['title']}]({update['url']})")
+        st.markdown("---")
 
 st.markdown(
     """

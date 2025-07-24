@@ -135,6 +135,11 @@ else:
 
     updates = [
         {
+            "date": "2025/7/23",
+            "title": "監査基準報告書等の訂正について",
+            "url": "https://jicpa.or.jp/specialized_field/20250723bqv.html",
+        },
+        {
             "date": "2025/4/14",
             "title": "法規・制度委員会研究報告第１号「監査及びレビュー等の契約書の作成例」の改正について",
             "url": "https://jicpa.or.jp/specialized_field/20250414jqh.html",
